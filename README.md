@@ -14,12 +14,15 @@ Simple web interface using Flask
 Real-time predictions with confidence scores
 
 Results
-Class	Precision	Recall	F1-Score
-Glioma	0.99	0.99	0.99
-Meningioma	0.91	0.89	0.90
-Pituitary	0.91	0.99	0.94
-No Tumor	0.95	0.89	0.92
-Accuracy			94%
+
+| Class       | Precision | Recall | F1-Score |
+|-------------|-----------|--------|----------|
+| Glioma      | 0.99      | 0.99   | 0.99     |
+| Meningioma  | 0.91      | 0.89   | 0.90     |
+| Pituitary   | 0.91      | 0.99   | 0.94     |
+| No Tumor    | 0.95      | 0.89   | 0.92     |
+| **Accuracy**|           |        | **94%**  |
+
 
 Dataset Used
 MRI images of brain tumors and healthy subjects were used from the Kaggle dataset (https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset).
