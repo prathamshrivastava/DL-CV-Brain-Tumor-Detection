@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brain Tumor Detection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="file"] {
+      margin: 15px;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 20px;
+    }
+    img {
+      margin-top: 20px;
+      width: 300px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🧠 Brain Tumor Detection</h1>
+
+  <form method="POST" enctype="multipart/form-data">
+    <input type="file" name="image" required>
+    <br>
+    <button type="submit">Upload and Analyze</button>
+  </form>
+
+  {% if result %}
+    <div class="result">
+      <p><strong>Result:</strong> {{ result }}</p>
+      <p><strong>Confidence:</strong> {{ (confidence * 100) | round(2) }}%</p>
+      <img src="{{ image_url }}" alt="Uploaded Image">
+    </div>
+  {% endif %}
+
+</body>
+</html>
