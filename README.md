@@ -33,8 +33,6 @@ Future Improvements
 -Deploy using Docker / on cloud (e.g., Render, Heroku, etc.)
 -Model ensembling or upgrade to EfficientNet
 
-Author
-Pratham Shrivastava
-Feel free to connect or suggest improvements!
+
 
 
